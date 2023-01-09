@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Financiamento</title>
+    <link rel="shortcut icon" href="calculadora.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <form class="calculadora" id="calculadora">
+        <header>
+          <img src="calculadora.png">
+          <h2>Calculadora de Financiamento</h2>
+        </header>
+        <main>
+            <div>
+                <label>Valor do bem</label>
+                <input name="valorDoBem" id="valorDoBem" type="text">
+            </div>
+            <div>
+                <label>Valor de entrada</label>
+                <input name="valorDeEntrada" id="valorDeEntrada" type="text">
+            </div>
+            <div>	
+                <label>Número de parcelas (meses)</label>
+                <input name="numeroDeParcelas" type="number" value="60">
+            </div>	
+            <div>
+                <label>Taxa de juros (%)</label>
+                <input name="taxaDeJuros" type="number" step="any" value="1">
+            </div>
+            <div>
+                <label>Valor financiado</label>
+                <div class="valor-financiado" id="valor-financiado">R$ 0.00</div>
+            </div>
+        </main>
+        <button>Calcular Parcela</button>
+
+        <label>Valor da parcela</label>
+        <div class="valor-parcela" id="valor-parcela">R$ 0.00</div>
+      </form>
+    
+</body>
+</html>
